@@ -2,11 +2,9 @@
 	margin: 0;
 	padding: 0;
 }
-
 ul {
 	list-style: none;
 }
-
 body {
 	min-width: 960px;
 }
@@ -16,125 +14,116 @@ header {
 	height: 80px;
 	background-color: #333333;
 }
-
 header div {
 	margin: 0 auto;
 	width: 960px;
 	height: 80px;
 }
-
 header h1 {
 	color: white;
 	float: left;
 	line-height: 80px;
 }
-
 header ul {
 	float: right;
 	padding-top: 5px;
 }
-
 header ul li {
 	float: left;
 	margin: 0 5px;
 }
-
 header a {
 	color: white;
 }
+/* 头部结束 */
 
-/* 内容 */
-/* banner */
-#banner {
-	height: 300px;
-	background-color: #66BB33;
-}
+/* section */
+	/* banner */
+	#banner {
+		height: 300px;
+		background-color: #66BB33;
+	}
+	#banner .box {
+		margin: 0 auto;
+		width: 960px;
+		height: 300px;
+		position: relative;
+	}
+	#banner ul {
+		position: absolute;
+		bottom: 5px;
+		right: 0;
+		/* 普通文档流，交叉轴自上而下，导致激活状态li高度向下超出普状态的li */
+		display: flex;
+		align-items: flex-end;
+	}
+	#banner ul li {
+		float: left;
+		margin: 0 3px;
+	}
+	#banner ul li a {
+		display: block;
+		text-decoration: none;
+		width: 30px;
+		height: 35px;
+		background-color: #B2DD99;
+		text-align: center;
+		line-height: 35px;
+	}
+	#banner .active {
+		height: 50px;
+		line-height: 65px;
+		background-color: #E0F1D6;
+	}
 
-#banner .box {
-	margin: 0 auto;
-	width: 960px;
-	height: 300px;
-	position: relative;
-}
-
-#banner ul {
-	position: absolute;
-	bottom: 5px;
-	right: 0;
-	/* 普通文档流，交叉轴自上而下，导致激活状态li高度向下超出普通块 */
-	display: flex;
-	align-items: flex-end;
-}
-
-#banner ul li {
-	float: left;
-	margin: 0 3px;
-}
-
-#banner ul li a {
-	display: block;
-	text-decoration: none;
-	width: 30px;
-	height: 35px;
-	background-color: #B2DD99;
-	text-align: center;
-	line-height: 35px;
-}
-
-#banner .active {
-	height: 50px;
-	line-height: 65px;
-	background-color: #E0F1D6;
-}
-
-/* 导航及内容 */
-/* 导航 */
-#nav {
-	border-bottom: solid #DDDDDD 1px;
-	/* 设置固定高度，利用溢出，实现对边框的局部遮挡 */
-	height: 70px;
-}
-#nav ul{
-	width: 960px;
-	margin: 0 auto;
-}
-#nav ul li {
-	float: left;
-	margin-top: 19px;
-	height: 50px;
-	width: 100px;
-	background-color: #eee ;
-	border-radius: 20px 20px 0 0 ;
-	text-align: center;
-	line-height: 50px;
-	border: #DDDDDD solid 1px;
-}
-#nav ul li.active{
-	background-color: white;
-	border-bottom: white solid 1px;
-}
-/* 内容 */
-#content {
-	width: 960px;
-	margin: 0 auto;
-	padding: 5px;
-}
-#content .c1,
-#content .c2,
-#content .c3{
-	display: flex;
-}
-#content .c1 div,
-#content .c2 div,
-#content .c3 div{
-	flex: 1;
-	text-align: center;
-	padding: 80px;
-	border: solid #ddd 1px;
-	margin: 5px;
-	font-size: 14px;
-}
-
+	/* 导航选项卡及导航栏内容 */
+		/* 导航选项卡 */
+		#nav {
+			border-bottom: solid #DDDDDD 1px;
+			/* 设置固定高度，利用溢出，实现对边框的局部遮挡 */
+			height: 70px;
+		}
+		#nav ul{
+			width: 960px;
+			margin: 0 auto;
+		}
+		#nav ul li {
+			float: left;
+			margin-top: 19px;
+			height: 50px;
+			width: 100px;
+			background-color: #eee ;
+			border-radius: 20px 20px 0 0 ;
+			text-align: center;
+			line-height: 50px;
+			border: #DDDDDD solid 1px;
+		}
+		#nav ul li.active{
+			background-color: white;
+			border-bottom: white solid 1px;
+		}
+		/* 导航栏内容 */
+		#content {
+			width: 960px;
+			margin: 0 auto;
+			padding: 5px;
+		}
+		#content .c1,
+		#content .c2,
+		#content .c3{
+			display: flex;
+		}
+		#content .c1 div,
+		#content .c2 div,
+		#content .c3 div{
+			flex: 1;
+			text-align: center;
+			padding: 80px;
+			border: solid #ddd 1px;
+			margin: 5px;
+			font-size: 14px;
+		}
+/* section结束 */
 
 
 /* 脚注 */
