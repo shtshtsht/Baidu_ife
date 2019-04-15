@@ -1,0 +1,599 @@
+/* 通用性设置 */
+body{
+	min-width: 1600px;
+}
+/* 结束 */
+
+/* header */
+header{
+	height: 990px;
+	margin: 0 auto;
+	/* background-image支持多张背景图片，先写的在表层 */
+	/* background简写时需要注意书写顺序 */
+	background: url(../img/header/backcolor.png), center/cover url(../img/header/bg.jpg) ;
+}
+header h1{
+	/* 本机没有psd中字体，暂用默认字体代替 */
+	font-size: 62px;
+	color: white;
+	text-align: center;
+	margin: 0 auto;
+	padding-top: 200px;
+}
+header .info{
+	font-size: 20px;
+	color: #b3b2b0;
+	width: 770px;
+	margin: 0 auto;
+	text-align: center;
+	padding-top: 100px;
+}
+#creat-account{
+	width: 968px;
+	height: 248px;
+	border: solid 1px #606060;
+	margin: 100px auto 0 auto;
+	text-align: center;
+}
+#creat-account h3{
+	font-size: 16px;
+	color: #e6e6e6;
+	padding-top: 60px;
+}
+#creat-account p{
+	font-size: 12px;
+	color: #606060;
+	padding-top: 20px;
+}
+#account-form{
+	margin-top: 45px;
+}
+#account-form input{
+	/* input有默认margin padding border 且不同浏览器默认值不同，会影响布局，需要统一设置 */
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#account-form #sign-email{
+	width: 282px;
+	height: 50px;
+	background: url(../img/header/inputFiled.png) no-repeat;
+	color: white;
+	/* 当清空text默认margin padding border后，输入的内容会紧贴边界显示，影响观感 */
+	padding: 0 5px;
+}
+#account-form #sign-psd{
+	width: 282px;
+	height: 50px;
+	background: url(../img/header/inputFiled.png) no-repeat;
+	margin: 0 30px;
+	color: white;
+	padding: 0 5px;
+}
+#account-form #sign-btn{
+	width: 125px;
+	height: 50px;
+	background: url(../img/header/button.png) no-repeat;
+	cursor: pointer;
+}
+/* header结束 */
+/* landing page */
+#landing{
+	background: url(../img/landing/bg.png);
+	height: 710px;
+	margin: 0 auto;
+	text-align: center;
+	border-bottom: #E6E6E6 solid 1px;
+}
+#landing h6{
+	font-size: 14px;
+	padding-top: 90px;
+}
+#landing h1{
+	font-size: 42px;
+	padding-top: 35px;
+	width: 700px;
+	margin: 0 auto;
+}
+#landing #landing-container{
+	width: 1170px;
+	margin: 80px auto 0 auto;
+	overflow: auto;
+}
+#landing #landing-container #iphone,
+#landing #landing-container #check,
+#landing #landing-container #pencil,
+#landing #landing-container #setting{
+	width: 445px;
+	height: 160px;
+	float: left;
+	overflow: hidden;
+	padding: 0 70px;
+}
+#landing #landing-container #iphone img,
+#landing #landing-container #check img,
+#landing #landing-container #pencil img,
+#landing #landing-container #setting img{
+	float: left;
+	display: block;
+	margin-left: -100%;
+}
+#landing #landing-container #iphone div,
+#landing #landing-container #check div,
+#landing #landing-container #pencil div,
+#landing #landing-container #setting div{
+	float: left;
+	padding-left: 65px;
+	text-align: left;
+}
+#landing #landing-container h3{
+	font-size: 20px;
+}
+#landing #landing-container p{
+	font-size: 16px;
+	color: #a0a0a0;
+	padding-top: 20px;
+}
+/* landing page 结束 */
+/* smart car */
+#smart-car{
+	height: 800px;
+	margin: 0 auto;
+	background: url(../img/smartcar/bgcolor.png), center/cover url(../img/smartcar/bg.jpg);
+	position: relative;
+}
+#smart-car #policy{
+	width: 570px;
+	height: 540px;
+	position: absolute;
+	left: 315px;
+	bottom: 120px;
+}
+#smart-car #policy h1{
+	font-size: 42px;
+	color: white;
+	width: 390px;
+	padding-top: 50px;
+}
+#smart-car #policy p{
+	font-size: 18px;
+	color: white;
+	width: 390px;
+	padding-top: 40px;
+}
+#smart-car #policy input{
+	font-size: 12px;
+	margin-top: 55px;
+	padding: 0;
+	border: none;
+}
+#smart-car #policy #checkbtn{
+	width: 240px;
+	height: 60px;
+	background: url(../img/smartcar/checkbtn.png);
+	margin-right: 30px;
+	cursor: pointer;
+}
+#smart-car #policy #trybtn{
+	width: 235px;
+	height: 60px;
+	background: url(../img/smartcar/trybtn.png);
+	cursor: pointer;
+	color: white;
+}
+#smart-car #screen{
+	width: 645px;
+	height: 540px;
+	padding: 30px 0;
+	background: url(../img/smartcar/ipad.png) no-repeat;
+	position: absolute;
+	right: 0;
+	top: 100px;
+}
+#smart-car #screen img{
+	background: url(../img/smartcar/ipad.png) no-repeat;
+	position: absolute;
+	right: 0;
+}
+/* smart car 结束 */
+/* products */
+#products{
+	height: 580px;
+	border-bottom: #E6E6E6 solid 1px;
+	background: url(../img/products/bg.png);
+	margin: 0 auto;
+}
+#products h1{
+	font-size: 42px;
+	text-align: center;
+	padding-top: 100px;
+}
+#products .products-container{
+	width: 970px;
+	margin: 90px auto 0 auto;
+	overflow: hidden;
+}
+#products .products-container div{
+	width: 270px;
+	float: left;
+	text-align: center;
+}
+#products .products-container .hero{
+	margin: 0 80px;
+}
+#products .products-container div img{
+	display: block;
+	padding-bottom: 40px;
+	margin: 0 auto;
+}
+#products .products-container div p{
+	text-align: left;
+	line-height: 1.5;
+}
+/* prodects 结束 */
+/* picture */
+#picture{
+	height: 1000px;
+	margin: 0 auto;
+	border-bottom: 1px solid #E6E6E6;
+	background: url(../img/picture/bg.png);
+}
+#picture-container{
+	width: 970px;
+	height: 780px;
+	margin: 0 auto;
+	padding: 110px 0;
+	overflow: hidden;
+}
+#picture .leaf{
+	width: 570px;
+	height: 350px;
+	background: url(../img/picture/leaf.jpg),url(../img/picture/bg-black.png);
+	float: left;
+}
+#picture .bird{
+	width: 570px;
+	height: 350px;
+	background: url(../img/picture/bird.jpg),url(../img/picture/bg-black.png);
+	float: left;
+	margin-top: 80px;
+}
+#picture .learn{
+	width: 300px;
+	height: 250px;
+	float: left;
+	padding: 75px 0 30px 100px;
+	line-height: 1.5;
+}
+#picture .choose{
+	width: 300px;
+	height: 250px;
+	float: left;
+	padding: 150px 100px 30px 0;
+	line-height: 1.5;
+}
+#picture .learn h3,
+#picture .choose h3{
+	font-size: 20px;
+}
+#picture .learn p,
+#picture .choose p{
+	font-size: 16px;
+}
+/* picture 结束 */
+/* crew */
+#crew{
+	height: 1084px;
+	border-bottom: 1px solid #E6E6E6;
+	background: url(../img/crew/bg.png);
+}
+#crew h1{
+	width: 430px;
+	height: 40px;
+	margin: 0 auto;
+	padding-top: 90px;
+	font-size: 42px;
+}
+#crew h2{
+	width: 700px;
+	height: 50px;
+	font-size: 18px;
+	text-align: center;
+	margin: 30px auto 60px auto;
+}
+#crew .photo{
+	width: 970px;
+	height: 710px;
+	margin: 0 auto;
+	position: relative;
+}
+#crew .photo .left-top{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/p1.jpg),url(../img/crew/bg-min-black.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+}
+#crew .photo .left-top-mask{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/bg-min.png);
+	position: absolute;
+	left: 0;
+	top: 0;
+	opacity: 0;
+}
+#crew .photo .left-top-mask:hover{
+	opacity: 1;
+}
+#crew .photo .right-top{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/p2.jpg),url(../img/crew/bg-min-black.png);
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+#crew .photo .right-top-mask{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/bg-min.png);
+	position: absolute;
+	right: 0;
+	top: 0;
+	opacity: 0;
+}
+#crew .photo .right-top-mask:hover{
+	opacity: 1;
+}
+#crew .photo .left-bottom{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/p3.jpg),url(../img/crew/bg-min-black.png);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+}
+#crew .photo .left-bottom-mask{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/bg-min.png);
+	position: absolute;
+	left: 0;
+	bottom: 0;
+	opacity: 0;
+}
+#crew .photo .left-bottom-mask:hover{
+	opacity: 1;
+}
+#crew .photo .right-bottom{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/p4.jpg),url(../img/crew/bg-min-black.png);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+}
+#crew .photo .right-bottom-mask{
+	width: 470px;
+	height: 340px;
+	background: url(../img/crew/bg-min.png);
+	position: absolute;
+	right: 0;
+	bottom: 0;
+	opacity: 0;
+}
+#crew .photo .right-bottom-mask:hover{
+	opacity: 1;
+}
+#crew .photo h3{
+	font-size: 20px;
+	color: white;
+	text-align: center;
+	padding-top: 110px;
+}
+#crew .photo  p{
+	font-size: 12px;
+	color: white;
+	text-align: center;
+	margin: 20px auto 35px auto;
+}
+#crew .photo .tag{
+	width: 215px;
+	height: 54px;
+	margin: 0 auto;
+}
+#crew .photo .tag a{
+	display: block;
+	width: 51px;
+	height: 54px;
+	float: left;
+	background: url(../img/crew/circle.png), center no-repeat url(../img/crew/f.png);
+}
+#crew .photo .tag .facebook{
+	background: url(../img/crew/circle.png), center no-repeat url(../img/crew/f.png);
+}
+#crew .photo .tag .twitter{
+	margin: 0 31px;
+	background: url(../img/crew/circle.png), center no-repeat url(../img/crew/t.png);
+}
+#crew .photo .tag .ins{
+	background: url(../img/crew/circle.png), center no-repeat url(../img/crew/i.png);
+}
+/* crew 结束 */
+/* contacts */
+#contacts{
+	height: 700px;
+	background: url(../img/contacts/bg.png);
+}
+#contacts .contacts-container{
+	width: 970px;
+	height: 560px;
+	margin: 0 auto;
+	padding-top: 70px;
+	position: relative;
+}
+#contacts .contacts-container .send{
+	width: 470px;
+	height: 560px;
+	background: url(../img/contacts/holder.png);
+}
+#contacts .contacts-container .send p{
+	text-align: center;
+	padding-top: 50px;
+	padding-bottom: 45px;
+}
+#contacts .contacts-container .send input,
+textarea{
+	margin: 0;
+	padding: 0;
+	border: none;
+}
+#contacts .contacts-container #send-email,
+#contacts .contacts-container #subject{
+	width: 360px;
+	height: 50px;
+	background: url(../img/contacts/textfield.png);
+	padding: 0 5px;
+	display: block;
+	margin: 0 auto 30px auto;
+}
+#contacts .contacts-container #msg{
+	width: 360px;
+	height: 134px;
+	background: url(../img/contacts/msgfield.png);
+	/* 关闭textarea的可调整大小选项 */
+	resize: none;
+	padding: 5px;
+	display: block;
+	margin: 0 auto 30px auto;
+}
+#contacts .contacts-container #sendbtn{
+	width: 370px;
+	height: 50px;
+	background: url(../img/contacts/btnbg.png);
+	color: white;
+	display: block;
+	margin: 0 auto 30px auto;
+	cursor: pointer;
+}
+#contacts .contacts-container .want{
+	width: 370px;
+	height: 360px;
+	position: absolute;
+	right: 0;
+	top: 170px;
+}
+#contacts .contacts-container h1{
+	font-size: 42px;
+	padding-bottom: 35px;
+}
+#contacts .contacts-container p{
+	font-size: 16px;
+	padding-bottom: 70px;
+}
+#contacts .info{
+	overflow: hidden;
+}
+#contacts .info #pic{
+	float: left;
+	width: 24px;
+	margin-right: 15px;
+}
+#contacts .info #pic img{
+	padding-bottom: 35px;
+}
+#contacts .info #words{
+	font-size: 16px;
+}
+/* contacts 结束 */
+/* footer */
+footer{
+	height: 410px;
+	background: #141414;
+}
+footer #footer-container{
+	width: 1170px;
+	padding-top: 85px;
+	margin: 0 auto;
+	overflow: hidden;
+}
+footer #footer-container .learn-more{
+	width: 170px;
+	color: white;
+	float: left;
+}
+footer #footer-container .about-us{
+	width: 170px;
+	color: white;
+	float: left;
+	margin: 0 130px;
+}
+footer #footer-container .support{
+	width: 100px;
+	color: white;
+	float: left;
+}
+footer #footer-container .learn-more a,
+footer #footer-container .about-us a,
+footer #footer-container .support a{
+	display: block;
+	margin-top: 35px;
+	color: #707070;
+	text-decoration: none;
+}
+footer #footer-container .learn-more a:hover,
+footer #footer-container .about-us a:hover,
+footer #footer-container .support a:hover{
+	color: white;
+}
+footer #footer-container .enjoy{
+	overflow: hidden;
+	width: 270px;
+	color: white;
+	float: right;
+}
+footer #footer-container .enjoy{
+	overflow: hidden;
+}
+footer #footer-container .enjoy h6{
+	color: white;
+}
+footer #footer-container .enjoy p{
+	padding: 40px 0 40px 0;
+	color: #707070;
+}
+footer #footer-container .enjoy a{
+	display: block;
+	width: 24px;
+	height: 24px;
+	float: left;
+	margin-right: 15px;
+}
+footer #footer-container #twitter{
+	background: center no-repeat url(../img/footer/t.png);
+}
+footer #footer-container #facebook{
+	background: center no-repeat url(../img/footer/f.png);
+}
+footer #footer-container #google{
+	background: center no-repeat url(../img/footer/g.png);
+}
+footer #footer-container #tumblr{
+	background: center no-repeat url(../img/footer/tb.png);
+}
+footer #pinterest{
+	background: center no-repeat url(../img/footer/p.png);
+}
+footer #footer-container #lindedIn{
+	background: center no-repeat url(../img/footer/l.png);
+}
+/* footer 结束 */
+
+
+
+
+
+
+
